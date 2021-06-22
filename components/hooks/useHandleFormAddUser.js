@@ -81,7 +81,7 @@ const useHandleFormAddClient = (stateSchema, validationSchema = {}, disableSchem
             [name]: { value, errorfield: error}
         }));
 
-    });
+    },[validationSchema]);
 
     return [handleOnChange, state, disable];
 
