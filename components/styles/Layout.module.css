@@ -30,9 +30,25 @@
 .headerIcons {
     display: flex;
     justify-content: space-around;
-    max-width: 100px;
+    max-width: 200px;
     width: 100%;
     align-items: center;
+}
+
+.buttonToLogOut {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    background-color: #0095f6;
+    color: #ffffff;
+    font-weight: bold; 
+    transition: 0.5s ease;
+}
+
+.buttonToLogOut:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .icons {

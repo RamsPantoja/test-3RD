@@ -5,6 +5,17 @@ const editClient = async (req, res) => {
     const id = req.query.id;
     const data = req.body;
 
+    const isMissingField = Object.keys(data).some(key => {
+        const value = data[key].value;
+        if (!value) {
+            return true;
+        }
+    });
+
+    if (isMissingField) {
+        return res.status(403).send('Todos los campos son obligatorios.')
+    }
+
     await dbConnect();
 
     Clients.findOneAndUpdate({_id: id}, {
