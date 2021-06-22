@@ -1,0 +1,37 @@
+.clientCard {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #ffffff;
+    justify-content: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 0.2em;
+    margin-bottom: 1em;
+}
+
+.clientCard:hover {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0, .06),0 2px 5px 0 rgba(0,0,0, .2);
+}
+
+.clientCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.clientCardHeaderInf {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clientCardHeaderInf > span {
+    padding-left: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.clientCardHeaderInf > span:hover {
+    text-decoration: underline;
+}

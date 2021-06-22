@@ -1,0 +1,37 @@
+.clientOptionsList {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0, .06),0 2px 5px 0 rgba(0,0,0, .2);
+    border-radius: 0.2em;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    padding: 0.5em 0;
+    z-index: 1001;
+}
+
+.clientOptions {
+    display: flex;
+    flex: 1;
+    padding: 0.3em 1em;
+    color: #0095f6;
+}
+
+
+.clientOptions:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.clientOptionsDelete {
+    display: flex;
+    flex: 1;
+    padding: 0.3em 1em;
+    color: #ed4242;
+}
+
+.clientOptionsDelete:hover {
+    cursor: pointer;
+    font-weight: bold;
+}

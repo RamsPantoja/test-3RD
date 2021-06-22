@@ -1,0 +1,30 @@
+.resumeContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    background-color: #ffffff;
+    justify-content: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+.resumeList {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    max-width: 250px;
+    width: 100%;
+    justify-content: center;
+}
+
+.resumeItem {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    justify-content: flex-end;
+    border-bottom: 1px solid #dbdbdb;
+}
+

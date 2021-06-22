@@ -1,0 +1,82 @@
+.layoutContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.layoutHeader {
+    display: flex;
+    flex: 1;
+    position: fixed;
+    width: 100%;
+    height: 3.5em;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 1000;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 975px;
+    justify-content: space-between;
+    height: 3.5em;
+    align-items: center;
+    padding: 0 1em;
+}
+
+
+.headerIcons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons:hover {
+    cursor: pointer;
+}
+
+.avatar {
+    display: flex;
+    border-radius: 10em;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.avatar:hover {
+    cursor: pointer;
+}
+
+.avatarRounded {
+    border-radius: 1em;
+}
+
+.contentContainerLayout {
+    display: flex;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fafafa;
+    justify-content: center;
+    padding: 2em 0;
+    margin-top: 3.5em;
+}
+
+.contentContainer {
+    max-width: 975px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
