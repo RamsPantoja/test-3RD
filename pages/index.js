@@ -57,7 +57,7 @@ const App = ({data, session}) => {
 
 
 export async function getServerSideProps({req, res}) {
-    const response = await fetch('http://localhost:3000/api/get_clients');
+    const response = await fetch(`${process.env.BASE_URL}/api/get_clients`);
     const data = await response.json();
 
     const session = await getSession({req});
